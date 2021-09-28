@@ -147,7 +147,7 @@ object mod extends Shortcut {
     trait Command
       extends StObject
          with EventEmitter
-         with /* key */ StringDictionary[js.Any] {
+         with /* key */ StringDictionary[Any] {
       
       /**
         * Register callback `fn` for the command.
@@ -163,7 +163,7 @@ object mod extends Shortcut {
         * @param {(...args: any[]) => void} fn
         * @returns {Command} for chaining
         */
-      def action(fn: js.Function1[/* repeated */ js.Any, Unit]): typings.commander.mod.local.Command = js.native
+      def action(fn: js.Function1[/* repeated */ Any, Unit]): typings.commander.mod.local.Command = js.native
       
       def alias(): String = js.native
       /**
@@ -335,28 +335,28 @@ object mod extends Shortcut {
         */
       def option(flags: String): typings.commander.mod.local.Command = js.native
       def option(flags: String, description: String): typings.commander.mod.local.Command = js.native
-      def option(flags: String, description: String, defaultValue: js.Any): typings.commander.mod.local.Command = js.native
-      def option(flags: String, description: String, fn: js.Function2[/* arg1 */ js.Any, /* arg2 */ js.Any, Unit]): typings.commander.mod.local.Command = js.native
+      def option(flags: String, description: String, defaultValue: Any): typings.commander.mod.local.Command = js.native
+      def option(flags: String, description: String, fn: js.Function2[/* arg1 */ Any, /* arg2 */ Any, Unit]): typings.commander.mod.local.Command = js.native
       def option(
         flags: String,
         description: String,
-        fn: js.Function2[/* arg1 */ js.Any, /* arg2 */ js.Any, Unit],
-        defaultValue: js.Any
+        fn: js.Function2[/* arg1 */ Any, /* arg2 */ Any, Unit],
+        defaultValue: Any
       ): typings.commander.mod.local.Command = js.native
-      def option(flags: String, description: String, fn: Unit, defaultValue: js.Any): typings.commander.mod.local.Command = js.native
+      def option(flags: String, description: String, fn: Unit, defaultValue: Any): typings.commander.mod.local.Command = js.native
       def option(flags: String, description: String, fn: RegExp): typings.commander.mod.local.Command = js.native
-      def option(flags: String, description: String, fn: RegExp, defaultValue: js.Any): typings.commander.mod.local.Command = js.native
-      def option(flags: String, description: Unit, defaultValue: js.Any): typings.commander.mod.local.Command = js.native
-      def option(flags: String, description: Unit, fn: js.Function2[/* arg1 */ js.Any, /* arg2 */ js.Any, Unit]): typings.commander.mod.local.Command = js.native
+      def option(flags: String, description: String, fn: RegExp, defaultValue: Any): typings.commander.mod.local.Command = js.native
+      def option(flags: String, description: Unit, defaultValue: Any): typings.commander.mod.local.Command = js.native
+      def option(flags: String, description: Unit, fn: js.Function2[/* arg1 */ Any, /* arg2 */ Any, Unit]): typings.commander.mod.local.Command = js.native
       def option(
         flags: String,
         description: Unit,
-        fn: js.Function2[/* arg1 */ js.Any, /* arg2 */ js.Any, Unit],
-        defaultValue: js.Any
+        fn: js.Function2[/* arg1 */ Any, /* arg2 */ Any, Unit],
+        defaultValue: Any
       ): typings.commander.mod.local.Command = js.native
-      def option(flags: String, description: Unit, fn: Unit, defaultValue: js.Any): typings.commander.mod.local.Command = js.native
+      def option(flags: String, description: Unit, fn: Unit, defaultValue: Any): typings.commander.mod.local.Command = js.native
       def option(flags: String, description: Unit, fn: RegExp): typings.commander.mod.local.Command = js.native
-      def option(flags: String, description: Unit, fn: RegExp, defaultValue: js.Any): typings.commander.mod.local.Command = js.native
+      def option(flags: String, description: Unit, fn: RegExp, defaultValue: Any): typings.commander.mod.local.Command = js.native
       
       /**
         * Return an object containing options as key-value pairs

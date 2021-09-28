@@ -13,7 +13,7 @@ trait ComponentElement[P, T /* <: japgolly.scalajs.react.raw.React.Component[P &
 }
 object ComponentElement {
   
-  inline def apply[P, T /* <: japgolly.scalajs.react.raw.React.Component[P & js.Object, js.Object] */](props: js.Any, `type`: js.Any): ComponentElement[P, T] = {
+  inline def apply[P, T /* <: japgolly.scalajs.react.raw.React.Component[P & js.Object, js.Object] */](props: Any, `type`: Any): ComponentElement[P, T] = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentElement[P, T]]

@@ -28,7 +28,7 @@ object global {
       *
       * @param array The octets to store.
       */
-    def this(array: js.Array[js.Any]) = this()
+    def this(array: js.Array[Any]) = this()
     /**
       * Allocates a new buffer containing the given {array} of octets.
       *
@@ -70,7 +70,7 @@ object global {
     /**
       * Allocates a new Buffer using an {array} of octets.
       */
-    inline def from(array: js.Array[js.Any]): typings.node.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(array.asInstanceOf[js.Any]).asInstanceOf[typings.node.Buffer]
+    inline def from(array: js.Array[Any]): typings.node.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(array.asInstanceOf[js.Any]).asInstanceOf[typings.node.Buffer]
   }
   
   /************************************************
@@ -93,7 +93,7 @@ object global {
   open class SlowBuffer protected ()
     extends StObject
        with NodeBuffer {
-    def this(array: js.Array[js.Any]) = this()
+    def this(array: js.Array[Any]) = this()
     def this(size: Double) = this()
     def this(size: Uint8Array) = this()
     def this(str: String) = this()
@@ -111,7 +111,7 @@ object global {
     inline def concat(list: js.Array[typings.node.Buffer]): typings.node.Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any]).asInstanceOf[typings.node.Buffer]
     inline def concat(list: js.Array[typings.node.Buffer], totalLength: Double): typings.node.Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(list.asInstanceOf[js.Any], totalLength.asInstanceOf[js.Any])).asInstanceOf[typings.node.Buffer]
     
-    inline def isBuffer(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isBuffer(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /************************************************

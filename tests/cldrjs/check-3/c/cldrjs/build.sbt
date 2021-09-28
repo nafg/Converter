@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cldrjs"
-version := "0.4.4-649e9c"
+version := "0.4.4-3d9733"
 scalaVersion := "3.0.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

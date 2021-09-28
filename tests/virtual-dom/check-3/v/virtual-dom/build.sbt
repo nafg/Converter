@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "virtual-dom"
-version := "0.0-unknown-ded41f"
+version := "0.0-unknown-6d72ad"
 scalaVersion := "3.0.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
